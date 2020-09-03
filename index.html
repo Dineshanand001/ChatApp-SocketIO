@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CHAT APP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="col-md-8 offset-md-5">
+            <h1 class="h3 mb-3 font-weight-normal">CHAT WITH DINESH</h1>
+        </div>
+
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="typing"></div>
+        </div>
+
+        <div class="container">      
+            <input type="text" id="handle" class="form-control" placeholder="Name" required autofocus>
+            <input type="text" id="message" class="form-control" placeholder="Enter a message" required>
+            <button id="button" class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+        </div>
+        
+        <!-- Paves way for global access of Socket Library -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/client.js" async defer></script>
+    </body>
+</html>
